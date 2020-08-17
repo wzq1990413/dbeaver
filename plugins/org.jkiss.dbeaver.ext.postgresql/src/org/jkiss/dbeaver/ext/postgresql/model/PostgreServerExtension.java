@@ -127,4 +127,8 @@ public interface PostgreServerExtension
     boolean supportsEntityMetadataInResults();
 
     boolean supportsPGConstraintExpressionColumn();
+
+    boolean supportsHasOidsColumn();
+
+    boolean supportsDatabaseSize();
 }

@@ -118,4 +118,14 @@ public class PostgreServerGreenplum extends PostgreServerExtensionBase {
             return super.readTableDDL(monitor, table);
         }
     }
+
+    @Override
+    public boolean supportsHasOidsColumn() {
+        return true;
+    }
+
+    @Override
+    public boolean supportsDatabaseSize() {
+        return true;
+    }
 }
